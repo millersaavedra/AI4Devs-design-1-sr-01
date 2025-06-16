@@ -88,8 +88,6 @@ sequenceDiagram
     LTI->>JobBoard: Publicar en portales (Indeed, LinkedIn, etc)
     JobBoard-->>LTI: Confirmación
 ```
-![alt text](img/1.png)
-
 
 ### 📥 Procesar Aplicaciones
 ```mermaid
@@ -103,8 +101,6 @@ sequenceDiagram
     AI Engine-->>LTI: Score y perfil
     LTI->>Recruiter: Mostrar candidatos ordenados
 ```
-![alt text](img/2.png)
-
 
 ### 📅 Entrevistar y Seleccionar
 ```mermaid
@@ -119,7 +115,7 @@ sequenceDiagram
     LTI->>Recruiter: Mostrar evaluación
     Recruiter->>LTI: Contratar candidato
 ```
-![alt text](img/3.png)
+
 ---
 
 ## 4. 🧬 Modelo de Datos
@@ -189,8 +185,6 @@ erDiagram
         string role
     }
 ```
-![alt text](img/4.png)
-
 
 ---
 
@@ -212,9 +206,6 @@ graph TD
     E --> F
 ```
 
-![alt text](img/5.png)
-
-
 ---
 
 ## 6. 🧱 Diagrama C4
@@ -229,8 +220,6 @@ graph TD
     User --> System
     System --> JobBoards
 ```
-
-![alt text](img/6.png)
 
 ### 🧱 Contenedores
 ```mermaid
@@ -249,8 +238,6 @@ flowchart TD
     API --> Scheduler
 ```
 
-![alt text](img/7.png)
-
 
 ### ⚙️ Componentes (API Backend)
 ```mermaid
@@ -268,9 +255,6 @@ graph TD
     API --> Interview
     API --> Service
 ```
-
-![alt text](img/8.png)
-
 
 ### 💻 Código - ScoringService
 ```python
